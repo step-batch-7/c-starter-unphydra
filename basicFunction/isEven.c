@@ -4,10 +4,7 @@ int isEven(int);
 
 int isEven(int num)
 {
-  if(num%2==0){
-    return 1;
-  } 
-  return 0;
+  return num%2==0;
 }
 
 int main(void)
@@ -15,6 +12,6 @@ int main(void)
   int number;
   printf("Enter the number : ");
   scanf("%d",&number);
-  printf("is %d a even number? %s\n",number,isEven(number)==1?"true":"false");
+  printf("%d is %s number\n",number,isEven(number)?"an even":"not an even");
   return 0;
 }
